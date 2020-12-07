@@ -1,3 +1,5 @@
+import create from './utils/create';
+
 export default class Card {
   constructor(cardObject) {
     this.cardObject = cardObject;
@@ -7,10 +9,8 @@ export default class Card {
 
   createCard() {
     const card = this.cardObject;
-    this.cardContainer = document.createElement('div');
-    this.cardContainer.classList.add('card-container');
-    this.flipCard = document.createElement('div');
-    this.flipCard.classList.add('flipcard');
+    this.cardContainer = create('div', 'card-container');
+    this.flipCard = create('div', 'flipcard', this.cardContainer);
     this.flipCard.innerHTML = `<div class="flipcard_face front">
                                   <div class="flipcard_image">
                                     <img src=${card.image} alt=${card.word} />
@@ -27,11 +27,8 @@ export default class Card {
                                     <p>${card.translation}</p>
                                   </div>
                                 </div>`;
-    this.flipButton = document.createElement('div');
-    this.flipButton.classList.add('flip_icon');
+    this.flipButton = create('div', 'flip_icon', this.flipCard);
     this.flipButton.innerHTML = '<img src="./assets/images/icons/flip_icon.svg" alt="flip"/>';
-    this.flipCard.append(this.flipButton);
-    this.cardContainer.append(this.flipCard);
     this.flipButton.addEventListener('click', (event) => this.flip(event, true));
     this.flipCard.addEventListener('mouseleave', (event) => this.flip(event, false));
   }
