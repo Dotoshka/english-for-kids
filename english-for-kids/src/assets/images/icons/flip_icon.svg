@@ -1,0 +1,19 @@
+<svg width="29.999999999999996" height="20" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="22" width="32" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path fill="#e55934" id="svg_2" d="m10.296001,4.111344c-5.6,2.6 -4.3,3.9 -1.2,4.6c0.4,0.1 0.8,0.2 1.2,0.2c0.9,0.1 1.9,0.2 2.8,0.3c0.6,0.1 1.2,0.1 1.8,0.1c2,0.1 3.5,0.1 3.5,0.1l0,-3.1c0,-0.5 0.6,-0.4 0.8,-0.2l5.8,4l2.3,1.6c0.2,0.2 0.2,0.5 0,0.8l-2.3,1.6l-2.8,2l-2.9,2c-0.1,0.1 -0.3,0.2 -0.4,0.2c-0.1,0 -0.4,0 -0.4,-0.3l0,-2.5c-1.5,-0.3 -2.9,-0.5 -4.2,-0.8c-0.4,-0.1 -0.7,-0.2 -1.1,-0.2c-1,-0.2 -2,-0.5 -2.8,-0.7c-0.7,-0.2 -1.3,-0.4 -1.9,-0.6c-14.4,-5.1 1.9,-11.1 1.9,-11.1l-0.1,2z" class="st0"/>
+   <polyline stroke-linecap="round" id="svg_6" points="10.328876495361328,2.194653332233429 10.497543334960938,2.194653332233429 10.58187484741211,2.110320508480072 10.750540733337402,2.0259878039360046 10.83487319946289,1.9416541457176208 10.919205665588379,1.9416541457176208 11.003539085388184,1.9416541457176208 11.003539085388184,1.9416541457176208 11.003539085388184,1.9416541457176208 11.003539085388184,1.9416541457176208 11.087870597839355,1.9416541457176208 11.172205924987793,1.8573212623596191 11.256537437438965,1.8573212623596191 11.34087085723877,1.8573212623596191 11.425204277038574,1.7729880809783936 11.509535789489746,1.7729880809783936 11.509535789489746,1.7729880809783936 11.59386920928955,1.6886539459228516 11.678202629089355,1.6886539459228516 11.678202629089355,1.6886539459228516 " opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+   <polyline stroke-linecap="round" id="svg_7" points="10.413208961486816,3.7126495838165283 10.750540733337402,3.7126495838165283 10.83487319946289,3.7126495838165283 10.919205665588379,3.7126495838165283 10.919205665588379,3.7126495838165283 " opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  </g>
+  <text id="svg_3" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" font-weight="bold" font-size="5px" fill="#000000" y="51" x="0">Created by Nathan Smith</text>
+  <text id="svg_4" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif" font-weight="bold" font-size="5px" fill="#000000" y="56" x="0">from the Noun Project</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_8" y2="10.645972" x2="13.066531" y1="10.898971" x1="11.548541" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_9" y2="10.730305" x2="13.31953" y1="12.585627" x1="12.054538" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="none"/>
+ </g>
+</svg>
