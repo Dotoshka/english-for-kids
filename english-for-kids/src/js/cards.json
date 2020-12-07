@@ -1,0 +1,434 @@
+[
+  {
+    "categoryName": "Colours",
+    "categoryImage": "./assets/images/colours/blue.png",
+    "words": [
+      {
+        "word": "blue",
+        "translation": "синий",
+        "image": "./assets/images/colours/blue.png",
+        "audioSrc": "./assets/sounds/blue.mp3"
+      },
+      {
+        "word": "brown",
+        "translation": "коричневый",
+        "image": "./assets/images/colours/brown.png",
+        "audioSrc": "./assets/sounds/brown.mp3"
+      },
+      {
+        "word": "green",
+        "translation": "зеленый",
+        "image": "./assets/images/colours/green.png",
+        "audioSrc": "./assets/sounds/green.mp3"
+      },
+      {
+        "word": "orange",
+        "translation": "оранжевый",
+        "image": "./assets/images/colours/orange.png",
+        "audioSrc": "./assets/sounds/orange.mp3"
+      },
+      {
+        "word": "pink",
+        "translation": "розовый",
+        "image": "./assets/images/colours/pink.png",
+        "audioSrc": "./assets/sounds/pink.mp3"
+      },
+      {
+        "word": "purple",
+        "translation": "фиолетовый",
+        "image": "./assets/images/colours/purple.png",
+        "audioSrc": "./assets/sounds/purple.mp3"
+      },
+      {
+        "word": "red",
+        "translation": "красный",
+        "image": "./assets/images/colours/red.png",
+        "audioSrc": "./assets/sounds/red.mp3"
+      },
+      {
+        "word": "yellow",
+        "translation": "желтый",
+        "image": "./assets/images/colours/yellow.png",
+        "audioSrc": "./assets/sounds/yellow.mp3"
+      }
+    ]
+  },
+  {
+    "categoryName": "Fruits",
+    "categoryImage": "./assets/images/fruits/apple.png",
+    "words": [
+      {
+      "word": "apple",
+      "translation": "яблоко",
+      "image": "./assets/images/fruits/apple.png",
+      "audioSrc": "./assets/sounds/apple.mp3"
+      },
+      {
+        "word": "banana",
+        "translation": "банан",
+        "image": "./assets/images/fruits/banana.png",
+        "audioSrc": "./assets/sounds/banana.mp3"
+      },
+      {
+        "word": "coconut",
+        "translation": "кокос",
+        "image": "./assets/images/fruits/coconut.png",
+        "audioSrc": "./assets/sounds/coconut.mp3"
+      },
+      {
+        "word": "grapes",
+        "translation": "виноград",
+        "image": "./assets/images/fruits/grapes.png",
+        "audioSrc": "./assets/sounds/grapes.mp3"
+      },
+      {
+        "word": "orange",
+        "translation": "апельсин",
+        "image": "./assets/images/fruits/orange.png",
+        "audioSrc": "./assets/sounds/orange.mp3"
+      },
+      {
+        "word": "pear",
+        "translation": "груша",
+        "image": "./assets/images/fruits/pear.png",
+        "audioSrc": "./assets/sounds/pear.mp3"
+      },
+      {
+        "word": "pineapple",
+        "translation": "ананас",
+        "image": "./assets/images/fruits/pineapple.png",
+        "audioSrc": "./assets/sounds/pineapple.mp3"
+      },
+      {
+        "word": "watermelon",
+        "translation": "арбуз",
+        "image": "./assets/images/fruits/watermelon.png",
+        "audioSrc": "./assets/sounds/watermelon.mp3"
+      }
+    ]
+  },
+  {
+    "categoryName": "Furniture",
+    "categoryImage": "./assets/images/furniture/wardrobe.png",
+    "words": [
+      {
+      "word": "bath",
+      "translation": "ванная",
+      "image": "./assets/images/furniture/bath.png",
+      "audioSrc": "./assets/sounds/bath.mp3"
+      },
+      {
+        "word": "bed",
+        "translation": "кровать",
+        "image": "./assets/images/furniture/bed.png",
+        "audioSrc": "./assets/sounds/bed.mp3"
+      },
+      {
+        "word": "chair",
+        "translation": "стул",
+        "image": "./assets/images/furniture/chair.png",
+        "audioSrc": "./assets/sounds/chair.mp3"
+      },
+      {
+        "word": "fridge",
+        "translation": "холодильник",
+        "image": "./assets/images/furniture/fridge.png",
+        "audioSrc": "./assets/sounds/fridge.mp3"
+      },
+      {
+        "word": "oven",
+        "translation": "плита",
+        "image": "./assets/images/furniture/oven.png",
+        "audioSrc": "./assets/sounds/oven.mp3"
+      },
+      {
+        "word": "sofa",
+        "translation": "диван",
+        "image": "./assets/images/furniture/sofa.png",
+        "audioSrc": "./assets/sounds/sofa.mp3"
+      },
+      {
+        "word": "table",
+        "translation": "стол",
+        "image": "./assets/images/furniture/table.png",
+        "audioSrc": "./assets/sounds/table.mp3"
+      },
+      {
+        "word": "wardrobe",
+        "translation": "гардероб",
+        "image": "./assets/images/furniture/wardrobe.png",
+        "audioSrc": "./assets/sounds/wardrobe.mp3"
+      }
+    ]
+  },
+  {
+    "categoryName": "Shapes",
+    "categoryImage": "./assets/images/shapes/diamond.png",
+    "words": [
+      {
+      "word": "circle",
+      "translation": "круг",
+      "image": "./assets/images/shapes/circle.png",
+      "audioSrc": "./assets/sounds/circle.mp3"
+      },
+      {
+        "word": "diamond",
+        "translation": "ромб",
+        "image": "./assets/images/shapes/diamond.png",
+        "audioSrc": "./assets/sounds/diamond.mp3"
+      },
+      {
+        "word": "heart",
+        "translation": "сердце",
+        "image": "./assets/images/shapes/heart.png",
+        "audioSrc": "./assets/sounds/heart.mp3"
+      },
+      {
+        "word": "oval",
+        "translation": "овал",
+        "image": "./assets/images/shapes/oval.png",
+        "audioSrc": "./assets/sounds/oval.mp3"
+      },
+      {
+        "word": "rectangle",
+        "translation": "прямоугольник",
+        "image": "./assets/images/shapes/rectangle.png",
+        "audioSrc": "./assets/sounds/rectangle.mp3"
+      },
+      {
+        "word": "square",
+        "translation": "квадрат",
+        "image": "./assets/images/shapes/square.png",
+        "audioSrc": "./assets/sounds/square.mp3"
+      },
+      {
+        "word": "star",
+        "translation": "звезда",
+        "image": "./assets/images/shapes/star.png",
+        "audioSrc": "./assets/sounds/star.mp3"
+      },
+      {
+        "word": "triangle",
+        "translation": "треугольник",
+        "image": "./assets/images/shapes/triangle.png",
+        "audioSrc": "./assets/sounds/triangle.mp3"
+      }
+    ]
+  },
+  {
+    "categoryName": "Transport",
+    "categoryImage": "./assets/images/transport/boat.png",
+    "words": [
+      {
+      "word": "bike",
+      "translation": "велосипед",
+      "image": "./assets/images/transport/bike.png",
+      "audioSrc": "./assets/sounds/bike.mp3"
+      },
+      {
+        "word": "boat",
+        "translation": "лодка",
+        "image": "./assets/images/transport/boat.png",
+        "audioSrc": "./assets/sounds/boat.mp3"
+      },
+      {
+        "word": "bus",
+        "translation": "автобус",
+        "image": "./assets/images/transport/bus.png",
+        "audioSrc": "./assets/sounds/bus.mp3"
+      },
+      {
+        "word": "car",
+        "translation": "машина",
+        "image": "./assets/images/transport/car.png",
+        "audioSrc": "./assets/sounds/car.mp3"
+      },
+      {
+        "word": "helicopter",
+        "translation": "вертолет",
+        "image": "./assets/images/transport/helicopter.png",
+        "audioSrc": "./assets/sounds/helicopter.mp3"
+      },
+      {
+        "word": "lorry",
+        "translation": "грузовик",
+        "image": "./assets/images/transport/lorry.png",
+        "audioSrc": "./assets/sounds/lorry.mp3"
+      },
+      {
+        "word": "plane",
+        "translation": "самолет",
+        "image": "./assets/images/transport/plane.png",
+        "audioSrc": "./assets/sounds/plane.mp3"
+      },
+      {
+        "word": "train",
+        "translation": "поезд",
+        "image": "./assets/images/transport/train.png",
+        "audioSrc": "./assets/sounds/train.mp3"
+      }
+    ]
+  },
+  {
+    "categoryName": "Underwater animals",
+    "categoryImage": "./assets/images/underwater-animals/fish.png",
+    "words": [
+      {
+      "word": "crab",
+      "translation": "краб",
+      "image": "./assets/images/underwater-animals/crab.png",
+      "audioSrc": "./assets/sounds/crab.mp3"
+      },
+      {
+        "word": "fish",
+        "translation": "рыба",
+        "image": "./assets/images/underwater-animals/fish.png",
+        "audioSrc": "./assets/sounds/fish.mp3"
+      },
+      {
+        "word": "jellyfish",
+        "translation": "медуза",
+        "image": "./assets/images/underwater-animals/jellyfish.png",
+        "audioSrc": "./assets/sounds/jellyfish.mp3"
+      },
+      {
+        "word": "octopus",
+        "translation": "осьминог",
+        "image": "./assets/images/underwater-animals/octopus.png",
+        "audioSrc": "./assets/sounds/octopus.mp3"
+      },
+      {
+        "word": "seahorse",
+        "translation": "морской конек",
+        "image": "./assets/images/underwater-animals/seahorse.png",
+        "audioSrc": "./assets/sounds/seahorse.mp3"
+      },
+      {
+        "word": "shark",
+        "translation": "акула",
+        "image": "./assets/images/underwater-animals/shark.png",
+        "audioSrc": "./assets/sounds/shark.mp3"
+      },
+      {
+        "word": "starfish",
+        "translation": "морская звезда",
+        "image": "./assets/images/underwater-animals/starfish.png",
+        "audioSrc": "./assets/sounds/starfish.mp3"
+      },
+      {
+        "word": "whale",
+        "translation": "кит",
+        "image": "./assets/images/underwater-animals/whale.png",
+        "audioSrc": "./assets/sounds/whale.mp3"
+      }
+    ]
+  },
+  {
+    "categoryName": "Vegetables",
+    "categoryImage": "./assets/images/vegetables/tomato.png",
+    "words": [
+      {
+      "word": "carrot",
+      "translation": "морковь",
+      "image": "./assets/images/vegetables/carrot.png",
+      "audioSrc": "./assets/sounds/carrot.mp3"
+      },
+      {
+        "word": "corn",
+        "translation": "кукуруза",
+        "image": "./assets/images/vegetables/corn.png",
+        "audioSrc": "./assets/sounds/corn.mp3"
+      },
+      {
+        "word": "green beans",
+        "translation": "стручковая фасоль",
+        "image": "./assets/images/vegetables/green-beans.png",
+        "audioSrc": "./assets/sounds/green-beans.mp3"
+      },
+      {
+        "word": "mushrooms",
+        "translation": "грибы",
+        "image": "./assets/images/vegetables/mushrooms.png",
+        "audioSrc": "./assets/sounds/mushrooms.mp3"
+      },
+      {
+        "word": "onion",
+        "translation": "лук",
+        "image": "./assets/images/vegetables/onion.png",
+        "audioSrc": "./assets/sounds/onion.mp3"
+      },
+      {
+        "word": "peas",
+        "translation": "горох",
+        "image": "./assets/images/vegetables/peas.png",
+        "audioSrc": "./assets/sounds/peas.mp3"
+      },
+      {
+        "word": "potato",
+        "translation": "картофель",
+        "image": "./assets/images/vegetables/potato.png",
+        "audioSrc": "./assets/sounds/potato.mp3"
+      },
+      {
+        "word": "tomato",
+        "translation": "помидор",
+        "image": "./assets/images/vegetables/tomato.png",
+        "audioSrc": "./assets/sounds/tomato.mp3"
+      }
+    ]
+  },
+  {
+    "categoryName": "Wild animals",
+    "categoryImage": "./assets/images/wild-animals/panda.png",
+    "words": [
+      {
+      "word": "camel",
+      "translation": "верблюд",
+      "image": "./assets/images/wild-animals/camel.png",
+      "audioSrc": "./assets/sounds/camel.mp3"
+      },
+      {
+        "word": "elephant",
+        "translation": "слон",
+        "image": "./assets/images/wild-animals/elephant.png",
+        "audioSrc": "./assets/sounds/elephant.mp3"
+      },
+      {
+        "word": "hippo",
+        "translation": "бегемот",
+        "image": "./assets/images/wild-animals/hippo.png",
+        "audioSrc": "./assets/sounds/hippo.mp3"
+      },
+      {
+        "word": "lion",
+        "translation": "лев",
+        "image": "./assets/images/wild-animals/lion.png",
+        "audioSrc": "./assets/sounds/lion.mp3"
+      },
+      {
+        "word": "monkey",
+        "translation": "обезьяна",
+        "image": "./assets/images/wild-animals/monkey.png",
+        "audioSrc": "./assets/sounds/monkey.mp3"
+      },
+      {
+        "word": "panda",
+        "translation": "панда",
+        "image": "./assets/images/wild-animals/panda.png",
+        "audioSrc": "./assets/sounds/panda.mp3"
+      },
+      {
+        "word": "tiger",
+        "translation": "тигр",
+        "image": "./assets/images/wild-animals/tiger.png",
+        "audioSrc": "./assets/sounds/tiger.mp3"
+      },
+      {
+        "word": "zebra",
+        "translation": "зебра",
+        "image": "./assets/images/wild-animals/zebra.png",
+        "audioSrc": "./assets/sounds/zebra.mp3"
+      }
+    ]
+  }
+]
