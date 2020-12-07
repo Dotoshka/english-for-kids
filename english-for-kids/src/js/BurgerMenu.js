@@ -1,3 +1,5 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
 import create from './utils/create';
 
 export default class BurgerMenu {
@@ -11,13 +13,21 @@ export default class BurgerMenu {
     this.createLinks();
     this.menuInput.addEventListener('change', this.switchMenu);
     this.overlay.onclick = this.switchMenu;
+    console.log(this.linksList);
+    window.addEventListener('hashchange', this.switchActiveLink);
+    this.switchActiveLink();
   }
 
   createLinks() {
-    this.menuList.innerHTML = '<li><a href="#" class="menu-item">Main page</a></li>';
+    this.linksList = {};
+    const mainLink = create('li', 'menu-item', this.menuList);
+    mainLink.innerHTML = '<a href="#" class="menu-item">Main page</a>';
+    this.linksList.main = mainLink;
     this.menuLinks.forEach((elem) => {
       const link = create('li', 'menu-item', this.menuList);
-      link.innerHTML = `<a href=#${encodeURI(elem.categoryName).toLowerCase()} class="menu-item">${elem.categoryName}</a>`;
+      link.innerHTML = `<a href=#${encodeURI(elem.categoryName).toLowerCase()} class="menu-link">${elem.categoryName}</a>`;
+      this.linksList[encodeURI(elem.categoryName).toLowerCase()] = link;
+      console.log(this.linksList);
     });
     [...this.menuList.children].forEach((child) => child.addEventListener('click', this.switchMenu));
   }
@@ -26,5 +36,17 @@ export default class BurgerMenu {
     this.overlay.classList.toggle('active');
     this.menuContainer.classList.toggle('active');
     this.menuLabel.classList.toggle('active');
+  }
+
+  switchActiveLink = () => {
+    console.log(this.linksList);
+    for (const key in this.linksList) {
+      this.linksList[key].classList.remove('active');
+      if (!window.location.hash) {
+        this.linksList.main.classList.add('active');
+      } else if (key === window.location.hash.substring(1)) {
+        this.linksList[key].classList.add('active');
+      }
+    }
   }
 }
