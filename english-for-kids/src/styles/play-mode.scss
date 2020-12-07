@@ -48,7 +48,7 @@
   width: 60px;
   height: 60px;
   position: fixed;
-  right: 0;
+  right: 5px;
   top: 100px;
   background-image: url('./assets/images/icons/start.svg');
   outline: none;
@@ -63,7 +63,7 @@
   }
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   &.repeat {

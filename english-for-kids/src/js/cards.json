@@ -2,6 +2,7 @@
   {
     "categoryName": "Colours",
     "categoryImage": "./assets/images/colours/blue.png",
+    "menuImage": "./assets/images/icons/menu-icons/colours.svg",
     "words": [
       {
         "word": "blue",
@@ -56,6 +57,7 @@
   {
     "categoryName": "Fruits",
     "categoryImage": "./assets/images/fruits/apple.png",
+    "menuImage": "./assets/images/icons/menu-icons/fruits.svg",
     "words": [
       {
       "word": "apple",
@@ -110,6 +112,7 @@
   {
     "categoryName": "Furniture",
     "categoryImage": "./assets/images/furniture/wardrobe.png",
+    "menuImage": "./assets/images/icons/menu-icons/furniture.svg",
     "words": [
       {
       "word": "bath",
@@ -164,6 +167,7 @@
   {
     "categoryName": "Shapes",
     "categoryImage": "./assets/images/shapes/diamond.png",
+    "menuImage": "./assets/images/icons/menu-icons/shapes.svg",
     "words": [
       {
       "word": "circle",
@@ -218,6 +222,7 @@
   {
     "categoryName": "Transport",
     "categoryImage": "./assets/images/transport/boat.png",
+    "menuImage": "./assets/images/icons/menu-icons/transport.svg",
     "words": [
       {
       "word": "bike",
@@ -272,6 +277,7 @@
   {
     "categoryName": "Underwater animals",
     "categoryImage": "./assets/images/underwater-animals/fish.png",
+    "menuImage": "./assets/images/icons/menu-icons/underwater-animals.svg",
     "words": [
       {
       "word": "crab",
@@ -326,6 +332,7 @@
   {
     "categoryName": "Vegetables",
     "categoryImage": "./assets/images/vegetables/tomato.png",
+    "menuImage": "./assets/images/icons/menu-icons/vegetables.svg",
     "words": [
       {
       "word": "carrot",
@@ -380,6 +387,7 @@
   {
     "categoryName": "Wild animals",
     "categoryImage": "./assets/images/wild-animals/panda.png",
+    "menuImage": "./assets/images/icons/menu-icons/wild-animals.svg",
     "words": [
       {
       "word": "camel",

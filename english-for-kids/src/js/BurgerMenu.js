@@ -21,11 +21,16 @@ export default class BurgerMenu {
   createLinks() {
     this.linksList = {};
     const mainLink = create('li', 'menu-item', this.menuList);
-    mainLink.innerHTML = '<a href="#" class="menu-item">Main page</a>';
+    mainLink.innerHTML = `<a href="#" class="menu-item">
+                          <img src="./assets/images/icons/menu-icons/main.svg" alt="icon">
+                          Main page</a>`;
     this.linksList.main = mainLink;
     this.menuLinks.forEach((elem) => {
       const link = create('li', 'menu-item', this.menuList);
-      link.innerHTML = `<a href=#${encodeURI(elem.categoryName).toLowerCase()} class="menu-link">${elem.categoryName}</a>`;
+      link.innerHTML = `<a href=#${encodeURI(elem.categoryName).toLowerCase()} class="menu-link">
+                        <img src="${elem.menuImage}" alt="icon">
+                        ${elem.categoryName}
+                        </a>`;
       this.linksList[encodeURI(elem.categoryName).toLowerCase()] = link;
       console.log(this.linksList);
     });

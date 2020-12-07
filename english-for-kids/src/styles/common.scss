@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 a {
@@ -67,15 +68,18 @@ h1 {
   text-shadow: 2px 2px black;
   line-height: 70%;
   padding: 0px 130px;
-  transition: all 0.5s ease-in-out;
 
-  &:hover {
+  a {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  a:hover {
     color: #FDE74C;
   }
 }
 
 h2 {
-  color: white;
+  color: #FDE74C;
   text-align: center;
   text-shadow: 2px 2px black;
   margin-bottom: 10px;

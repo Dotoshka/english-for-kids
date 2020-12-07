@@ -86,25 +86,25 @@
   }
 
   ul {
-    margin: 0 auto;
+    margin-left: 10px;
     padding-top: 100px;
     list-style: none;
 
     li {
-      margin: 0 auto;
-      text-align: center;
-      width: fit-content;
+      width: 92%;
       line-height: 120%;
       padding: 0 10px;
+      transition: all .3s ease-in;
+      border-radius: 20px;
+      background-color: inherit;
 
       &.active {
-        background-color: #E55934;
+        background-color: rgba(229, 89, 52, 1);
         border-radius: 20px;
       }
 
       &:hover {
         background-color: #9BC53D;
-        border-radius: 20px;
       }
     }
   }
@@ -112,6 +112,18 @@
   a {
     text-decoration: none;
     color: #545454;
+    font-size: 26px;
     transition: all .3s ease-in-out;
+    // display: flex;
+    // align-items: flex-end;
+
+    img {
+      position: relative;
+      width: 31px;
+      height: 30px;
+      margin-right: 5px;
+      top: 5px;
+      transition: 0.3s ease;
+    }
   }
 }
