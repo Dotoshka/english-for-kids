@@ -35,7 +35,6 @@ export default class CardsPage {
     this.cardsList.words.forEach((elem) => {
       const card = new Card(elem);
       this.cardElements.push(card);
-      console.log(this.cardElements);
       this.cardsContainer.appendChild(card.cardContainer);
     });
   }

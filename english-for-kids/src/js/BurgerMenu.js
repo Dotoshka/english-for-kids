@@ -13,7 +13,6 @@ export default class BurgerMenu {
     this.createLinks();
     this.menuInput.addEventListener('change', this.switchMenu);
     this.overlay.onclick = this.switchMenu;
-    console.log(this.linksList);
     window.addEventListener('hashchange', this.switchActiveLink);
     this.switchActiveLink();
   }
@@ -32,7 +31,6 @@ export default class BurgerMenu {
                         ${elem.categoryName}
                         </a>`;
       this.linksList[encodeURI(elem.categoryName).toLowerCase()] = link;
-      console.log(this.linksList);
     });
     [...this.menuList.children].forEach((child) => child.addEventListener('click', this.switchMenu));
   }
@@ -45,7 +43,6 @@ export default class BurgerMenu {
   }
 
   switchActiveLink = () => {
-    console.log(this.linksList);
     for (const key in this.linksList) {
       this.linksList[key].classList.remove('active');
       if (!window.location.hash) {
