@@ -36,6 +36,7 @@ export default class BurgerMenu {
     this.overlay.classList.toggle('active');
     this.menuContainer.classList.toggle('active');
     this.menuLabel.classList.toggle('active');
+    document.body.classList.toggle('unscroll');
   }
 
   switchActiveLink = () => {

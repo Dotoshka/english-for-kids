@@ -1,0 +1,149 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.maincard {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 100%;
+  cursor: pointer;
+  background: radial-gradient(100% 115% at 25% 25%, #fff, transparent 33%),
+  radial-gradient(15% 15% at 75% 75%, #80dfff, transparent),
+  radial-gradient(100% 100% at 50% 25%, transparent, #b3ecff 48%);
+  border: 1px solid #b3ecff;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16), 0 3px 10px 0 rgba(0,0,0,0.12);
+  text-decoration: none;
+  color: #E55934;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 2px 29px cyan;
+    transform: scale(1.05);
+  }
+
+  img {
+    @include card-image;
+  }
+
+  span {
+    max-width: 95%;
+  }
+ }
+
+ .card-container {
+  width: 255px;
+  height: 255px;
+  perspective: 1000px;
+
+ }
+
+ .flipcard {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 2px 29px cyan;
+    transform: translateZ(5px);
+  }
+
+  &.inactive {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &.card-flipped {
+    transform: rotateY(180deg);
+  }
+
+  &_face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    background: radial-gradient(100% 115% at 25% 25%, #fff, transparent 33%),
+    radial-gradient(15% 15% at 75% 75%, #80dfff, transparent),
+    radial-gradient(100% 100% at 50% 25%, transparent, #b3ecff 48%);
+    border: 1px solid #b3ecff;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.16), 0 3px 10px 0 rgba(0,0,0,0.12);
+    
+  
+    &.back {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &_image {
+    img {
+      @include card-image;
+    }
+  }
+
+  &_title {
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 75%;
+
+  }
+
+  .flip_icon {
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+    font-size: 30px;
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    z-index: 1;
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }  
+  }
+ }
+
+ main.play-mode {
+
+  .flipcard_face {
+    justify-content: center;
+  }
+
+  .flip_icon,
+  .flipcard_title {
+    transform: scale(0);
+  }
+ }

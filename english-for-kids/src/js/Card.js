@@ -44,7 +44,7 @@ export default class Card {
 
   createCardEvent() {
     const cardClickEvent = new CustomEvent('card-click', {
-      detail: this.cardObject,
+      detail: this,
       bubbles: true,
       composed: true,
     });

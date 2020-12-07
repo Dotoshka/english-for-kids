@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Findet Nemo';
+  src: url('./assets/fonts/FindetNemo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bangwhackpow';
+  src: url('./assets/fonts/bangwhackpow.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin card-image {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 20px auto 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'bangwhackpow', 'Lobster', cursive;
+  color: #E55934;
+  font-size: 32px;
+  background-image: url('./assets/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &.unscroll {
+    overflow: hidden;
+  }
+}
+
+header {
+  flex: 0 1 auto;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+h1 {
+  font-family: 'Findet Nemo';
+  font-size: 110px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto 15px;
+  // margin-bottom: 15px;
+  text-shadow: 2px 2px black;
+  line-height: 70%;
+  padding: 0px 130px;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    color: #FDE74C;
+  }
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.page-container {
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+.overlay {
+  opacity: 0;
+  position: fixed;
+  transition: 200ms ease-in-out;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color:rgba(122, 132, 190, 0.9);
+  pointer-events: none;
+  z-index: 10;
+
+  &.overlay_menu {
+    z-index: 2;
+  }
+
+  &.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+}

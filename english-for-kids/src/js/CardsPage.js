@@ -46,12 +46,12 @@ export default class CardsPage {
   }
 
   cardClicksHandler(event) {
-    if (!this.playMode) {
-      this.pageAudio.src = event.detail.audioSrc;
+    if (!this.playMode && !event.detail.flipCard.classList.contains('card-flipped')) {
+      this.pageAudio.src = event.detail.cardObject.audioSrc;
       this.pageAudio.currentTime = 0;
       this.pageAudio.play();
     } else if (this.gameStarted) {
-      if (this.currWord.word === event.detail.word) {
+      if (this.currWord.word === event.detail.cardObject.word) {
         create('div', 'star-win', this.starsContainer);
         event.target.classList.add('inactive');
         this.playAudio(rightAnswerSoundPath);

@@ -1,0 +1,79 @@
+.switch {
+  display: block;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.switch_label {
+  position: absolute;
+  display: block;
+  background: #E55934;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: inset 0 3px 10px rgba(0,0,0,.3);
+}
+
+.switch_label:before {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  content: 'PLay';
+  left: 15px;
+  text-shadow: 0 1px rgba(255,255,255,0.5);
+  opacity: 0;
+}
+
+.switch_label:after {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  content: 'Train';
+  left: 8px;
+  text-shadow: 0 1px rgba(255,255,255,0.5);
+}
+
+.switch_handle {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 2px;
+  top: 2px;
+  background: radial-gradient(100% 115% at 25% 25%, #fff, transparent 83%), 
+  radial-gradient(70% 52% at 29% 47%, transparent, #80dfff 0);
+  border: 1px solid #b3ecff;
+  transition: all 150ms ease-out;
+  border-radius: 50%;
+  box-shadow: inset 0 8px 6px -4px rgba(0,0,0,.2);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 2px 29px cyan;
+    transform: translateZ(5px);
+  }
+}
+
+input[type="checkbox"]:checked ~ .switch_handle {
+  left: 62px;
+}
+
+.switch input[type="checkbox"]:checked ~ .switch_label {
+  background: #1A61AF;
+}
+
+.switch input[type="checkbox"]:checked ~ .switch_label:before {
+  opacity: 1;
+}
+
+.switch input[type="checkbox"]:checked ~ .switch_label:after  {
+  opacity: 0;
+}
