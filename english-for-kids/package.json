@@ -1,13 +1,13 @@
 {
-  "name": "gem-puzzle",
+  "name": "english-for-kids",
   "version": "1.0.0",
-  "description": "gem-puzzle",
+  "description": "english-for-kids",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development"
   },
   "browserslist": ">0.25%, not dead",
   "keywords": [

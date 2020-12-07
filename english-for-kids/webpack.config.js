@@ -1,31 +1,11 @@
 const path = require('path');
 const HTMLWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin')
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin');
-// const TerserWebpackPlugin = require('terser-webpack-plugin');
-// const { loader } = require('mini-css-extract-plugin')
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
-
-// const optimization = () => {
-//   const config = {
-//     splitChunks: {
-//       chunks: 'all',
-//     },
-//   };
-
-//   if (isProd) {
-//     config.minimizer = [
-//       new OptimizeCssAssetWebpackPlugin(),
-//       new TerserWebpackPlugin(),
-//     ];
-//   }
-
-//   return config;
-// };
 
 const jsLoaders = () => {
   const loaders = [{
@@ -50,21 +30,25 @@ const jsLoaders = () => {
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'production',
-  entry: ['@babel/polyfill', './js/App.js'],
+  // entry: ['webpack-dev-server/client?http://localhost:8080/', '@babel/polyfill', './index.js'],
+  entry: ['@babel/polyfill', './index.js'],
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    // publicPath: '/dist/',
   },
   resolve: {
-    extensions: ['.js', '.png', '.jpg', '.jpeg', '.wav'],
+    extensions: ['.js', '.png', '.jpg', '.jpeg', '.wav', '.mp3', '.json'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
   },
-  // optimization: optimization(),
   devServer: {
-    port: 4200,
+    historyApiFallback: true,
+    contentBase: path.resolve(__dirname, 'src'),
+    open: true,
+    compress: true,
+    hot: true,
+    port: 8080,
   },
   // devtool: isDev ? 'source-map' : '',
   plugins: [
@@ -81,23 +65,46 @@ module.exports = {
     // Plugin for coping files from dir to dir
     // new CopyWebpackPlugin([
     //   {
-    //     from: '',
-    //     to: ''
-    //   }
-    // ])
+    //     from: path.resolve(__dirname, 'src/assets'),
+    //     to: path.resolve(__dirname, 'dist/assets'),
+    //   },
+    // ]),
   ],
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '',
+            },
+          },
+          {
+            loader: 'css-loader',
+          },
+        ],
       },
       {
         test: /\.s[ac]ss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '',
+            },
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
-        test: /\.(png|jpg|jpeg|svg|wav|mp3)$/,
+        test: /\.(png|jpg|jpeg|svg|mp3|ttf)$/,
         use: ['file-loader'],
       },
       {
