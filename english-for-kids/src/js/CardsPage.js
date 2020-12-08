@@ -96,10 +96,10 @@ export default class CardsPage {
 
   checkWin() {
     if (this.wrongClicks) {
-      this.wrongClicks = 0;
       setTimeout(() => {
         this.playAudio(loseSoundPath);
         this.showModal(false);
+        this.wrongClicks = 0;
       }, 500);
     } else {
       setTimeout(() => {
@@ -110,7 +110,7 @@ export default class CardsPage {
     setTimeout(() => {
       window.location.hash = '';
       this.overlay.remove();
-    }, 4000);
+    }, 6000);
   }
 
   finishGame = () => {
@@ -127,7 +127,7 @@ export default class CardsPage {
       modalWindow.innerHTML = `Congratulations!
                               <img src="${winImagePath}" alt="win">`;
     } else {
-      modalWindow.innerHTML = `Try again!
+      modalWindow.innerHTML = `Try again! You have ${this.wrongClicks} wrong ${this.wrongClicks > 1 ? 'answers' : 'answer'}
                               <img src="${loseImagePath}" alt="win">`;
     }
   }

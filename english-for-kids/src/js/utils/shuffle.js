@@ -5,6 +5,5 @@ export default function shuffle(array) {
     const randElem = newArr.splice(randInd, 1)[0];
     newArr.push(randElem);
   }
-  console.log(newArr);
   return newArr;
 }
