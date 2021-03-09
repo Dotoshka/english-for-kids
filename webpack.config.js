@@ -1,7 +1,7 @@
 const path = require('path');
 const HTMLWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -62,13 +62,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    // Plugin for coping files from dir to dir
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: path.resolve(__dirname, 'src/assets'),
-    //     to: path.resolve(__dirname, 'dist/assets'),
-    //   },
-    // ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'assets', to: 'assets' },
+      ],
+    }),
   ],
   module: {
     rules: [
